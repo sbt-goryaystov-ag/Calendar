@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/resources/"}, glue = {"economic.auto.steps"},
+plugin = {"economic.auto.util.AllureReporter",},
 tags = {"@start"})
 public class CucumberRunner {
 }
